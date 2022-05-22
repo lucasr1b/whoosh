@@ -10,17 +10,20 @@ function MenuFoodItem(props: any) {
 
     return (
         <div className='Menu--Food--Item'>
-            <div className='Menu--Food--Item--Display' style={{background: 'url(' + props.display + ')'}}></div> 
-            <div className='Menu--Food--Item--Details'>
-                <h1>{props.name}</h1>
-                <div className='Rating'>
-                    {rating.map(function (i: any) {
-                        return <Icon name='star' key={i} />
-                    })}
-
-
+            <div className='Menu--Food--Item--Display' style={{ background: 'url(' + props.display + ')' }}></div>
+            <div className='Menu--Food--Item--Wrapper'>
+                <div className='Menu--Food--Item--Details'>
+                    <h1>{props.name}</h1>
+                    <div className='Rating'>
+                        {rating.map(function (i: any) {
+                            return <Icon name='star' key={i} />
+                        })}
+                    </div>
+                    <p><span>$</span>{props.price}</p>
                 </div>
-                <p><span>$</span>{props.price}</p>
+                <div className='Menu--Food--Item--Add'>
+                    <div><Icon name='plus' /></div>
+                </div>
             </div>
         </div>
     )
