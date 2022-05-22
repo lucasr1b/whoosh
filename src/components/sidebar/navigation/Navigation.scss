@@ -1,0 +1,39 @@
+nav {
+    .Notifications {
+        background-color: #dff2e8;
+        color: #1fa743;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+    }
+
+    .Profile {
+        display: flex;
+
+        .Profile--Picture {
+            background-color: #dff2e8;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+            border-radius: 8px;
+
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        span {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+    }
+}
