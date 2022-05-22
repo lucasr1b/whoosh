@@ -9,22 +9,35 @@ nav {
         width: 100%;
         display: flex;
         justify-content: flex-end;
-    }
-    .Search {
-        background-color: #ebebeb;
-        display: flex;
-        align-items: center;
-        width: 375px;
-        height: 45px;
-        color: #352D2D;
-        font-size: 16px;
-        border: 2px solid #ebebeb;
-        border-radius: 12px;
-        padding-left: 15px;
+        position: relative;
 
-        &:focus {
-            outline: none;
-            border: 2px solid #1FA743;
+        .Search {
+            background-color: #ebebeb;
+            display: flex;
+            align-items: center;
+            width: 375px;
+            height: 45px;
+            color: #352d2d;
+            font-size: 16px;
+            border: 2px solid #ebebeb;
+            border-radius: 12px;
+            padding-left: 15px;
+
+            &:focus {
+                outline: none;
+                border: 2px solid #1fa743;
+            }
+        }
+
+        .Search--Icon {
+            position: absolute;
+            padding: 12px 15px 0px 0px;
+            color: #6f6d6d;
+
+            &:hover {
+                color: #352d2d;
+                cursor: pointer;
+            }
         }
     }
 }
