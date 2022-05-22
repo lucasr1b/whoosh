@@ -1,10 +1,17 @@
 .Order {
+    height: 100%;
     margin-top: 25px;
 
     h1 {
         color: #352d2d;
         font-size: 28px;
         margin-bottom: 25px;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .Order--Items {
+        min-height: 45%;
+        padding-left: 20px;
     }
 
     .Order--Item {
@@ -30,7 +37,7 @@
                 font-weight: 600;
                 width: 55px;
                 height: 28px;
-                border: 2px solid #1FA743;
+                border: 2px solid #1fa743;
                 margin-top: 5px;
                 border-radius: 8px;
 
@@ -55,9 +62,8 @@
 
                 span {
                     font-size: 14px;
-                    color: #1FA743;
+                    color: #1fa743;
                 }
-
             }
         }
 
@@ -77,6 +83,91 @@
             }
 
             margin-right: 15px;
+        }
+    }
+
+    .Divider {
+        background-color: #cfcfcf;
+        width: 100%;
+        height: 1px;
+        margin-bottom: 20px;
+    }
+
+    .Order--Details {
+        .Order--Details--Info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-left: 20px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            div {
+                background-color: #c8f0d2;
+                color: #1fa743;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+            }
+
+            span {
+                color: #352d2d;
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+
+        .Order--Details--Price {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            h1 {
+                font-size: 22px;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            p {
+                color: #352d2d;
+                font-size: 24px;
+                font-weight: 700;
+                margin: 0px 15px 0px auto;
+
+                span {
+                    color: #1fa743;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .Order--Details--Checkout {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            button {
+                background-color: white;
+                color: #1fa743;
+                font-size: 16px;
+                font-weight: 500;
+                border: 2px solid #1fa743;
+                padding: 15px 80px;
+                border-radius: 12px;
+
+                &:hover {
+                    background-color: #1a8f39;
+                    color: white;
+                    border: 2px solid #1a8f39;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
