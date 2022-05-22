@@ -23,6 +23,7 @@
             font-weight: 600;
         }
         button {
+            background-color: #DFF2E8;
             border: 2px solid #1fa743;
             color: #1fa743;
             font-size: 16px;
@@ -33,7 +34,7 @@
 
             &:hover {
                 background-color: #1fa743;
-                color: white;
+                color: #DFF2E8;
                 cursor: pointer;
             }
         }
