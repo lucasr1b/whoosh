@@ -2,11 +2,8 @@ import React from 'react'
 import { Icon } from '@ailibs/feather-react-ts'
 
 function MenuFoodItem(props: any) {
-    const rating: any = [];
 
-    for (let i = 0; i < props.rating; i++) {
-        rating.push(i + 1);
-    }
+    const rating = props.rating;
 
     return (
         <div className='Menu--Food--Item'>
@@ -15,8 +12,8 @@ function MenuFoodItem(props: any) {
                 <div className='Menu--Food--Item--Details'>
                     <h1>{props.name}</h1>
                     <div className='Rating'>
-                        {rating.map(function (i: any) {
-                            return <Icon name='star' key={i} />
+                        {[...new Array(5)].map((arr, index) => {
+                            return index < rating ? <Icon name='star' /> : <Icon name='star' className='Half--Star' />
                         })}
                     </div>
                     <p><span>$</span>{props.price}</p>
