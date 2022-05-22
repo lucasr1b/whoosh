@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    .Brand {
+        color: #1fa743;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .Search--Container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Search {
+        background-color: #ebebeb;
+        display: flex;
+        align-items: center;
+        width: 375px;
+        height: 45px;
+        color: #352D2D;
+        font-size: 16px;
+        border: 2px solid #ebebeb;
+        border-radius: 12px;
+        padding-left: 15px;
+
+        &:focus {
+            outline: none;
+            border: 2px solid #1FA743;
+        }
+    }
+}

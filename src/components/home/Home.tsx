@@ -1,10 +1,11 @@
 import React from 'react'
 import './Home.scss';
+import Navigation from './Navigation';
 
 function Home() {
     return (
         <div className='Container'>
-            <b>whoosh</b>
+            <Navigation />
         </div>
     )
 }
