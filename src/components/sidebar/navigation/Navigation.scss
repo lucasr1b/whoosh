@@ -9,6 +9,12 @@ nav {
         width: 50px;
         height: 50px;
         border-radius: 8px;
+
+        &:hover {
+            background-color: #1fa743;
+            color: white;
+            cursor: pointer;
+        }
     }
 
     .Profile {
