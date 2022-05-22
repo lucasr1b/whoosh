@@ -1,6 +1,6 @@
 import React from 'react'
 import './Promotion.scss'
-import FoodDelivery from '../../assets/FoodDelivery.png';
+import FoodDelivery from '../../../assets/FoodDelivery.png';
 
 function Promotion() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import './Home.scss';
-import Menu from './Menu';
-import Navigation from './Navigation';
-import Promotion from './Promotion';
+import Menu from './menu/Menu';
+import Navigation from './navigation/Navigation';
+import Promotion from './promotion/Promotion';
 
 function Home() {
     return (

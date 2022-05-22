@@ -1,16 +1,16 @@
 import React from 'react'
 import './Menu.scss';
 import MenuCategoryItem from './MenuCategoryItem';
-import Burger from '../../assets/food/Burger.png';
-import Pizza from '../../assets/food/Pizza.png';
-import Drink from '../../assets/food/Drink.png';
-import Dessert from '../../assets/food/Dessert.png';
-import Donut from '../../assets/food/Donut.png';
-import Snack from '../../assets/food/Snack.png';
+import Burger from '../../../assets/food/Burger.png';
+import Pizza from '../../../assets/food/Pizza.png';
+import Drink from '../../../assets/food/Drink.png';
+import Dessert from '../../../assets/food/Dessert.png';
+import Donut from '../../../assets/food/Donut.png';
+import Snack from '../../../assets/food/Snack.png';
 import MenuFoodItem from './MenuFoodItem';
-import Cheeseburger from '../../assets/display/Cheeseburger.jpg';
-import ChickenBurger from '../../assets/display/ChickenBurger.jpg';
-import BetterBurger from '../../assets/display/BetterBurger.jpg';
+import Cheeseburger from '../../../assets/display/Cheeseburger.jpg';
+import ChickenBurger from '../../../assets/display/ChickenBurger.jpg';
+import BetterBurger from '../../../assets/display/BetterBurger.jpg';
 
 function Menu() {
     return (
