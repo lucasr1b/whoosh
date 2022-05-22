@@ -1,0 +1,49 @@
+.Promotion {
+    background-color: #dff2e8;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 14px;
+
+    .Promotion--Info {
+        padding: 25px 0px 25px 25px;
+        h1 {
+            color: #352d2d;
+            font-size: 24px;
+        }
+
+        p {
+            color: #a5b39b;
+            font-size: 16px;
+            margin-top: 12px;
+        }
+
+        span {
+            color: #1fa743;
+            font-weight: 600;
+        }
+        button {
+            border: 2px solid #1fa743;
+            color: #1fa743;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 25px;
+            padding: 10px 25px;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: #1fa743;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .Promotion--Image {
+        margin: 0px 125px 0px auto;
+        
+        img {
+            width: 200px;
+        }
+    }
+}
