@@ -38,7 +38,7 @@
             border-radius: 50px;
 
             img {
-                width: 50px;
+                width: 45px;
             }
         }
 
@@ -56,6 +56,23 @@
             svg {
                 width: 22px;
             }
+        }
+    }
+
+    .Menu--Category--Item--Active {
+        background-color: #1fa743;
+        
+        span {
+            color: white;
+        }
+
+        .Menu--Category--Item--Image { 
+            background-color: white;
+        }
+
+        .Menu--Category--Item--Select {
+            background-color: white;
+            color: #1fa743;
         }
     }
 }
