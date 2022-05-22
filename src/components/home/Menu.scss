@@ -25,6 +25,10 @@
             margin-top: 10px;
         }
 
+        &:not(.Menu--Category--Item--Active):hover {
+            cursor: pointer;
+        }
+
         &:last-child {
             margin: 0;
         }
@@ -59,7 +63,7 @@
         }
     }
 
-    .Menu--Category--Item--Active {
+    .Menu--Category--Item--Active, .Menu--Category--Item:hover {
         background-color: #1fa743;
 
         span {
@@ -144,7 +148,7 @@
             margin: 0px 15px 0px auto;
 
             div {
-                background-color: #1fa743;
+                border: 2px solid #1fa743;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -155,7 +159,18 @@
                 svg {
                     width: 22px;
                     height: 22px;
-                    color: white;
+                    color: #1FA743;
+                }
+
+                &:hover {
+                    border: 2px solid #1fa743;
+                    background-color: #1fa743;
+                    cursor: pointer;
+
+                    svg {
+                        color: white;
+                    }
+
                 }
             }
         }
