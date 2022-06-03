@@ -11,7 +11,7 @@ function Promotion() {
           <button>Learn More</button>
         </div>
         <div className='Promotion--Image'>
-        <img src={FoodDelivery} />
+        <img src={FoodDelivery} alt='Food Delivery'/>
         </div>
       </div>
   )

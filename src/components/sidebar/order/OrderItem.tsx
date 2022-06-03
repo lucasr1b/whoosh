@@ -5,7 +5,7 @@ import Cheeseburger from '../../../assets/display/Cheeseburger.jpg'
 function OrderItem() {
     return (
         <div className='Order--Item'>
-            <img src={Cheeseburger} />
+            <img src={Cheeseburger} alt='Order Item'/>
             <div className='Order--Item--Details'>
                 <p>Cheeseburger</p>
                 <select>
