@@ -1,4 +1,3 @@
-import React from 'react';
 import Burger from '../../../../assets/food/Burger.png';
 import Pizza from '../../../../assets/food/Pizza.png';
 import Drink from '../../../../assets/food/Drink.png';

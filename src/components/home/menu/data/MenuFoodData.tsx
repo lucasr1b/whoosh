@@ -1,4 +1,3 @@
-import React from 'react';
 import Cheeseburger from '../../../../assets/display/Cheeseburger.jpg';
 import ChickenBurger from '../../../../assets/display/ChickenBurger.jpg';
 import BetterBurger from '../../../../assets/display/BetterBurger.jpg';
