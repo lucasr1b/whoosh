@@ -15,7 +15,7 @@ function Menu() {
                 {MenuCategoryData.map((item, index) => {
                     const isActive = item.name.toLowerCase() === categoryName ? 'Menu--Category--Item--Active' : '';
                     return (
-                        <MenuCategoryItem name={item.name} image={item.image} active={isActive} onClick={() => setCategoryName(item.name.toLowerCase())} key={index} />
+                        <MenuCategoryItem name={item.name} display={item.display} active={isActive} onClick={() => setCategoryName(item.name.toLowerCase())} key={index} />
                     )
                 })}
             </div>

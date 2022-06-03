@@ -9,27 +9,27 @@ import Snack from '../../../assets/food/Snack.png';
 const MenuCategoryData = [
     {
         name: 'Burger',
-        image: Burger,
+        display: Burger,
     },
     {
         name: 'Pizza',
-        image: Pizza,
+        display: Pizza,
     },
     {
         name: 'Drink',
-        image: Drink,
+        display: Drink,
     },
     {
         name: 'Dessert',
-        image: Dessert,
+        display: Dessert,
     },
     {
         name: 'Donut',
-        image: Donut,
+        display: Donut,
     },
     {
         name: 'Snack',
-        image: Snack,
+        display: Snack,
     },
     
 ]
