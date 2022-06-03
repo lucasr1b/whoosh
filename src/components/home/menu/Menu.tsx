@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import './Menu.scss';
 import MenuCategoryItem from './MenuCategoryItem';
 import MenuFoodItem from './MenuFoodItem';
-import MenuData from './MenuFoodData';
-import MenuCategoryData from './MenuCategoryData';
+import MenuData from './data/MenuFoodData';
+import MenuCategoryData from './data/MenuCategoryData';
 
 function Menu() {
     const [categoryName, setCategoryName] = useState('burger');
