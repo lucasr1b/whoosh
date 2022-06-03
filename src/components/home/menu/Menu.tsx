@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Menu.scss';
 import MenuCategoryItem from './MenuCategoryItem';
 import MenuFoodItem from './MenuFoodItem';
-import MenuData from './MenuData';
+import MenuData from './MenuFoodData';
 import MenuCategoryData from './MenuCategoryData';
 
 function Menu() {
