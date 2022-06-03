@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import './Menu.scss';
 import MenuCategoryItem from './MenuCategoryItem';
 import MenuFoodItem from './MenuFoodItem';
-import Cheeseburger from '../../../assets/display/Cheeseburger.jpg';
-import ChickenBurger from '../../../assets/display/ChickenBurger.jpg';
-import BetterBurger from '../../../assets/display/BetterBurger.jpg';
 import MenuData from './MenuData';
 import MenuCategoryData from './MenuCategoryData';
 
@@ -25,7 +22,7 @@ function Menu() {
             <div className='Menu--Food'>
                 {MenuData.map((item, index) => {
                     return item.category === categoryName ? (
-                        <MenuFoodItem name={item.name} price={item.price} rating={item.rating} display={Cheeseburger} key={index} />
+                        <MenuFoodItem name={item.name} price={item.price} rating={item.rating} display={item.display} key={index} />
                     ) : null
                 })}
             </div>
