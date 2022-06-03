@@ -13,7 +13,7 @@ function MenuFoodItem(props: any) {
                     <h1>{props.name}</h1>
                     <div className='Rating'>
                         {[...new Array(5)].map((arr, index) => {
-                            return index < rating ? <Icon name='star' /> : <Icon name='star' className='Half--Star' />
+                            return index < rating ? <Icon name='star' key={index} /> : <Icon name='star' className='Half--Star' key={index} />
                         })}
                     </div>
                     <p><span>$</span>{props.price}</p>
