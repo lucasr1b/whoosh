@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Home from './components/home/Home';
 import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
+
+  const [orderItems, setOrderItems] = useState(['cheese_burger']);
+
+  function addItem(item: any) {
+    setOrderItems(val => val.concat(item));
+  }
+
   return (
     <div className="App">
-      <Home />
-      <Sidebar />
+      <Home order={orderItems} addOrderItem={addItem}/>
+      <Sidebar order={orderItems} addOrderItem={addItem}/>
     </div>
   );
 }

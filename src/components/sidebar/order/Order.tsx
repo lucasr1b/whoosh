@@ -3,12 +3,12 @@ import './Order.scss'
 import OrderDetails from './OrderDetails'
 import OrderItem from './OrderItem'
 
-function Order() {
+function Order(props: any) {
     return (
         <div className='Order'>
             <h1>My Order</h1>
             <div className='Order--Items'>
-                <OrderItem />
+                <OrderItem order={props.order} addOrderItem={props.addOrderItem}/>
             </div>
             <div className='Divider'></div>
             <OrderDetails />

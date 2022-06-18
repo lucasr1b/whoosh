@@ -3,11 +3,11 @@ import Navigation from './navigation/Navigation';
 import Order from './order/Order';
 import './Sidebar.scss';
 
-function Sidebar() {
+function Sidebar(props: any) {
   return (
     <div className='Sidebar'>
       <Navigation />
-      <Order />
+      <Order order={props.order} addOrderItem={props.addOrderItem}/>
     </div>
   )
 }

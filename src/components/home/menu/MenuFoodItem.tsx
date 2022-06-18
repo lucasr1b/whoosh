@@ -19,7 +19,7 @@ function MenuFoodItem(props: any) {
                     <p><span>$</span>{props.price}</p>
                 </div>
                 <div className='Menu--Food--Item--Add'>
-                    <div><Icon name='plus' /></div>
+                    <div onClick={() => props.addOrderItem(props.id)}><Icon name='plus' /></div>
                 </div>
             </div>
         </div>

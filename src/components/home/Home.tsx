@@ -4,12 +4,12 @@ import Menu from './menu/Menu';
 import Navigation from './navigation/Navigation';
 import Promotion from './promotion/Promotion';
 
-function Home() {
+function Home(props: any) {
     return (
         <div className='Container'>
             <Navigation />
             <Promotion />
-            <Menu />
+            <Menu order={props.order} addOrderItem={props.addOrderItem}/>
         </div>
     )
 }

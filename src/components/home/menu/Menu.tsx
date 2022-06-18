@@ -5,7 +5,7 @@ import MenuFoodItem from './MenuFoodItem';
 import MenuData from './data/MenuFoodData';
 import MenuCategoryData from './data/MenuCategoryData';
 
-function Menu() {
+function Menu(props: any) {
     const [categoryName, setCategoryName] = useState('burger');
 
     return (
@@ -22,7 +22,7 @@ function Menu() {
             <div className='Menu--Food'>
                 {MenuData.map((item, index) => {
                     return item.category === categoryName ? (
-                        <MenuFoodItem name={item.name} price={item.price} rating={item.rating} display={item.display} key={index} />
+                        <MenuFoodItem order={props.order} addOrderItem={props.addOrderItem} id={item.id} name={item.name} price={item.price} rating={item.rating} display={item.display} key={index} />
                     ) : null
                 })}
             </div>
