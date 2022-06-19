@@ -22,7 +22,7 @@ function Menu(props: any) {
             <div className='Menu--Food'>
                 {MenuData.map((item, index) => {
                     return item.category === categoryName ? (
-                        <MenuFoodItem order={props.order} addOrderItem={props.addOrderItem} id={item.id} name={item.name} price={item.price} rating={item.rating} display={item.display} key={index} />
+                        <MenuFoodItem order={props.order} addOrderItem={props.addOrderItem} item={item} key={index} />
                     ) : null
                 })}
             </div>

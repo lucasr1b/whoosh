@@ -4,19 +4,20 @@ import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
-
-  const [orderItems, setOrderItems] = useState(['cheese_burger']);
+  
+  const [orderItems, setOrderItems] = useState<Item[]>([]);
 
   function addItem(item: any) {
-    setOrderItems(val => val.concat(item));
+    setOrderItems((prevState) => { return [...prevState, item] });
   }
 
   return (
     <div className="App">
-      <Home order={orderItems} addOrderItem={addItem}/>
-      <Sidebar order={orderItems} addOrderItem={addItem}/>
+      <Home order={orderItems} addOrderItem={addItem} />
+      <Sidebar order={orderItems} addOrderItem={addItem} />
     </div>
   );
 }
+
 
 export default App;

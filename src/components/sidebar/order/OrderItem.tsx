@@ -4,14 +4,16 @@ import Cheeseburger from '../../../assets/display/Cheeseburger.jpg'
 
 function OrderItem(props: OrderItemProps) {
 
+    console.log(props.order);
+
     return (
         <>
-            {props.order.map(o => {
+            {props.order && props.order.map(item => {
                 return (
                     <div className='Order--Item'>
-                        <img src={Cheeseburger} alt='Order Item' />
+                        <img src={item.display} alt='Order Item' />
                         <div className='Order--Item--Details'>
-                            <p>{o}</p>
+                            <p>{item.name}</p>
                             <select>
                                 <option>1</option>
                                 <option>2</option>
@@ -26,7 +28,7 @@ function OrderItem(props: OrderItemProps) {
 
                         </div>
                         <div className='Order--Item--Price'>
-                            <p><span>$</span>5.00</p>
+                            <p><span>$</span>{item.price}</p>
                         </div>
                         <div className='Order--Item--Delete'>
                             <span><Icon name='x' /></span>
@@ -40,7 +42,7 @@ function OrderItem(props: OrderItemProps) {
 }
 
 type OrderItemProps = {
-    order: string[];
+    order: Item[];
     addOrderItem: (order: string) => void;
 }
 
