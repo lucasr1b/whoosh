@@ -9,6 +9,7 @@ function OrderItem(props: OrderItemProps) {
 
     return (
         <>
+        {props.order.length < 1 ? <span className='No--Items'>Your order will show up here.</span> : null}
             {props.order && props.order.map((item, index) => {
                 return (
                     <div className='Order--Item' key={index}>
