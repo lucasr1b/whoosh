@@ -10,7 +10,6 @@ function App() {
   function addItem(item: any) {
     const newItem = {...item, id: Math.random().toString(36).substring(2, 9)}
     setOrderItems((prevState) => { return [...prevState, newItem] });
-    console.log(orderItems);
   }
 
   return (

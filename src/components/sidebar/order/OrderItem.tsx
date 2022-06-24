@@ -1,20 +1,17 @@
 import { Icon } from '@ailibs/feather-react-ts'
 import React from 'react'
-import Cheeseburger from '../../../assets/display/Cheeseburger.jpg'
 
 function OrderItem(props: OrderItemProps) {
 
     function removeItem(object: any) {
-
-        console.log(props.order)
         props.removeOrderItem(props.order.filter(item => object.id !== item.id));
     }
 
     return (
         <>
-            {props.order && props.order.map(item => {
+            {props.order && props.order.map((item, index) => {
                 return (
-                    <div className='Order--Item'>
+                    <div className='Order--Item' key={index}>
                         <img src={item.display} alt='Order Item' />
                         <div className='Order--Item--Details'>
                             <p>{item.name}</p>
