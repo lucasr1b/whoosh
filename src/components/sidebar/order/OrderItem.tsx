@@ -4,7 +4,9 @@ import Cheeseburger from '../../../assets/display/Cheeseburger.jpg'
 
 function OrderItem(props: OrderItemProps) {
 
-    console.log(props.order);
+    function removeItem(object: any) {
+        props.removeOrderItem(props.order.filter(item => object != item));
+    }
 
     return (
         <>
@@ -31,7 +33,7 @@ function OrderItem(props: OrderItemProps) {
                             <p><span>$</span>{item.price}</p>
                         </div>
                         <div className='Order--Item--Delete'>
-                            <span><Icon name='x' /></span>
+                            <span onClick={() => removeItem(item)}><Icon name='x' /></span>
                         </div>
 
                     </div>
@@ -44,6 +46,7 @@ function OrderItem(props: OrderItemProps) {
 type OrderItemProps = {
     order: Item[];
     addOrderItem: (order: string) => void;
+    removeOrderItem: (order: Item[]) => void;
 }
 
 export default OrderItem

@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Home order={orderItems} addOrderItem={addItem} />
-      <Sidebar order={orderItems} addOrderItem={addItem} />
+      <Sidebar order={orderItems} removeOrderItem={setOrderItems} addOrderItem={addItem} />
     </div>
   );
 }

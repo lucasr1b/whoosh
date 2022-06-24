@@ -7,7 +7,7 @@ function Sidebar(props: any) {
   return (
     <div className='Sidebar'>
       <Navigation />
-      <Order order={props.order} addOrderItem={props.addOrderItem}/>
+      <Order order={props.order} removeOrderItem={props.removeOrderItem} addOrderItem={props.addOrderItem}/>
     </div>
   )
 }
