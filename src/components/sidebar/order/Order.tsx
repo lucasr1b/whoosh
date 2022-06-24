@@ -11,7 +11,7 @@ function Order(props: any) {
                 <OrderItem order={props.order} removeOrderItem={props.removeOrderItem} addOrderItem={props.addOrderItem}/>
             </div>
             <div className='Divider'></div>
-            <OrderDetails />
+            <OrderDetails order={props.order}/>
         </div>
     )
 }

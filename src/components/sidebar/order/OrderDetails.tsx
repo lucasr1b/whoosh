@@ -2,7 +2,8 @@ import { Icon } from '@ailibs/feather-react-ts'
 import React from 'react'
 
 
-function OrderDetails() {
+function OrderDetails(props: any) {
+
     return (
         <div className='Order--Details'>
             <div className='Order--Details--Info'>
@@ -15,7 +16,7 @@ function OrderDetails() {
             </div>
             <div className='Order--Details--Price'>
                 <h1>Total Amount:</h1>
-                <p><span>$</span>5.00</p>
+                <p><span>${props.order.map((obj: any) => parseFloat(obj.price)).reduce((a: any, b: any) => a + b, 0).toFixed(2)}</span></p>
             </div>
             <div className='Order--Details--Checkout'>
                 <button>Checkout</button>
