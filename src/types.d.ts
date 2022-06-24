@@ -1,5 +1,6 @@
 interface Item {
-    id: string;
+    id: string
+    food_id: string;
     name: string;
     price: string;
     rating: number;

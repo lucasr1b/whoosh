@@ -5,7 +5,9 @@ import Cheeseburger from '../../../assets/display/Cheeseburger.jpg'
 function OrderItem(props: OrderItemProps) {
 
     function removeItem(object: any) {
-        props.removeOrderItem(props.order.filter(item => object != item));
+
+        console.log(props.order)
+        props.removeOrderItem(props.order.filter(item => object.id !== item.id));
     }
 
     return (
