@@ -160,19 +160,27 @@
 
             button {
                 background-color: white;
-                color: #1fa743;
                 font-size: 16px;
                 font-weight: 500;
-                border: 2px solid #1fa743;
                 padding: 15px 80px;
                 border-radius: 12px;
+            }
 
+            button:not([disabled]) {
+                color: #1fa743;
+                border: 2px solid #1fa743;
                 &:hover {
                     background-color: #1a8f39;
                     color: white;
                     border: 2px solid #1a8f39;
                     cursor: pointer;
                 }
+            }
+            
+            button:disabled {
+                color: #757575;
+                border: 2px solid #757575;
+                cursor: default;
             }
         }
     }

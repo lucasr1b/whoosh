@@ -19,7 +19,7 @@ function OrderDetails(props: any) {
                 <p><span>${props.order.map((obj: any) => parseFloat(obj.price)).reduce((a: any, b: any) => a + b, 0).toFixed(2)}</span></p>
             </div>
             <div className='Order--Details--Checkout'>
-                <button>Checkout</button>
+                <button disabled={props.order.length < 1 ? true : false}>Checkout</button>
             </div>
         </div>
     )
